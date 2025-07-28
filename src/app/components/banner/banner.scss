@@ -1,0 +1,60 @@
+.banner {
+  background: url(../../../../public/banner/misha.jpeg) center center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  height: 80vh;
+  position: relative;
+}
+.banner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  background: black;
+  opacity: .4;
+}
+
+.banner-container {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+}
+
+.banner-info {
+  font-size: 18px;
+  width: 50%;
+  padding-right: 30px;
+  margin-bottom: 80px;
+  h1 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  p {
+    line-height: 20px;
+  }
+}
+
+.banner-form {
+  width: 40%;
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    input, textarea {
+      background: white;
+      border-radius: 8px;
+      margin-bottom: 15px;
+      color: black;
+      padding: 4px 8px;
+      font-size: 14px;
+    }
+    textarea {
+      height: 120px;
+    }
+  }
+}
