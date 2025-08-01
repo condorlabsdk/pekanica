@@ -1,5 +1,4 @@
 .banner {
-  background: url(../../../../public/banner/misha.jpeg) center center no-repeat;
   background-size: cover;
   background-attachment: fixed;
   color: white;
@@ -42,6 +41,8 @@
 .banner-form {
   width: 40%;
   form {
+    opacity: 0;
+    visibility: hidden;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -56,5 +57,123 @@
     textarea {
       height: 120px;
     }
+  }
+}
+
+
+
+///////////
+
+
+
+.carousel-image {
+  flex-basis: 260px;
+  text-align: right;
+}
+.carousel-image img {
+  max-width: 220px;
+  height: auto;
+  border-radius: 8px;
+}
+.carousel-nav {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  pointer-events: none;
+  z-index: 9;
+}
+.carousel-btn {
+  pointer-events: all;
+  background: rgba(0,0,0,0.18);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  font-size: 1.7em;
+  cursor: pointer;
+  transition: background 0.2s;
+  outline: none;
+}
+.carousel-btn:hover {
+  background: #06c167;
+  color: #fff;
+}
+@media (max-width: 700px) {
+  .carousel-slide { flex-direction: column; text-align: center; }
+  .carousel-text { padding: 0 0 18px 0; }
+  .carousel-image { text-align: center; }
+}
+
+
+
+/////
+/// 
+/// 
+
+
+.linea-productos {
+  background: #fffde9;
+  padding: 44px 0 32px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.linea-titulo {
+  text-align: center;
+  font-size: 2.2em;
+  color: #d32f2f;
+  font-weight: bold;
+  margin-bottom: 32px;
+  letter-spacing: 1px;
+}
+.productos-lista {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 36px;
+}
+.producto-card {
+  background: #fff;
+  border-radius: 22px;
+  box-shadow: 0 4px 16px rgba(220, 38, 38, 0.08);
+  width: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 26px 16px 18px 16px;
+  transition: box-shadow 0.2s, transform 0.2s;
+  cursor: pointer;
+}
+.producto-card:hover {
+  box-shadow: 0 8px 24px rgba(220, 38, 38, 0.16);
+  transform: translateY(-4px) scale(1.04);
+}
+.producto-icono {
+  margin-bottom: 14px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.producto-nombre {
+  font-size: 1.04em;
+  color: #7a4927;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+@media (max-width: 700px) {
+  .productos-lista {
+    flex-direction: column;
+    align-items: center;
+    gap: 26px;
+  }
+  .producto-card {
+    width: 80vw;
+    max-width: 340px;
   }
 }
