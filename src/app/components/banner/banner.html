@@ -1,26 +1,23 @@
 <section class="carousel-container">
   <div 
-    class="banner carousel-slide h-100 " 
+    class="banner h-100 " 
     *ngFor="let slide of slides; let i = index" 
     [style.display]="currentSlide === i ? 'flex' : 'none'"
     [style.backgroundImage]="'url(' + slide.bg + ')'"
     >
     <div class="banner-container container flex items-center justify-center">
-      <div class="carousel-text banner-info">
+      <div class=" banner-info">
         <h2>{{ slide.title }}</h2>
         <p class="mb-8">{{ slide.text }}</p>
       </div>
-      <div class="carousel-image">
-
-        <div class="banner-form">
-          <img [src]="slide.img" [alt]="slide.title">
-          <form action="">
-            <input type="text" placeholder="Nombre">
-            <input type="email" placeholder="Correo">
-            <input type="number" placeholder="Celular">
-            <textarea name="" id="" cols="30" rows="10" placeholder="Escriba alguna duda"></textarea>
-          </form>
-        </div>
+      <div class="banner-form">
+        <img [src]="slide.img" [alt]="slide.title">
+        <form action="">
+          <input type="text" placeholder="Nombre">
+          <input type="email" placeholder="Correo">
+          <input type="number" placeholder="Celular">
+          <textarea name="" id="" cols="30" rows="10" placeholder="Escriba alguna duda"></textarea>
+        </form>
       </div>
     </div>
   </div>
