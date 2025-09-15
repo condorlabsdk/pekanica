@@ -34,7 +34,7 @@ export class Banner {
       title: 'Olives and Olive Oil from Tacna, Perú',
       text: 'Tacna olives are the ninth Peruvian Denomination of Origin. Tacna olives have their own characteristics, as they are grown at an altitude of between 25 and 800 meters above sea level.',
       img: '/banner/vitaoliva.png',
-      bg: '/banner/bg-vitaoliva.webp',
+      bg: '/banner/bg-vitaoliva.jpeg',
     }
   ];
 
