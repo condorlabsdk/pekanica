@@ -18,3 +18,18 @@
   font-size: 20px;
   font-weight: bold;
 }
+.header-sandwich-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .logo {
+    padding-left: 0;
+  }
+  .nav {
+    display: none;
+  }
+  .header-sandwich-mobile {
+    display: block;
+  }
+}
